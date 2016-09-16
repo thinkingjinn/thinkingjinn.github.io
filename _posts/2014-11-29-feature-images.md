@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Feature images
-image:
-  feture: img/sample_feature_img.png
+feature-img: img/sample_feature_img.png
 bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
