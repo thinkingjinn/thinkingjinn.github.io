@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Black and white films"
+title:  Feature images
 excerpt: "In Mickey's early films he was often characterized not as a hero, but as an ineffective young suitor to Minnie Mouse..."
 categories: history
 tags:  mickey
