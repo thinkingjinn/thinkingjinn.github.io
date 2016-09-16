@@ -1,35 +1,15 @@
 ---
 layout: default
 ---
-<article class="postWrapper">
-    <section class="section--first is-darkBackgrounded u-table">
-        <div class="section-backgroundImage">
-            
-            {% if page.feature-img %}
-            <img class="feature-image" src="{{ page.feature-img | prepend: site.baseurl }}">
-                {% endif %}
-                
-        </div>
-        <div class="section-gradient
-            {% if page.bgGradientOpacity == "darker" %}
-            section-gradient--darker
-            {% elsif page.bgGradientOpacity == "lighter" %}
-            section-gradient--lighter
-            {% endif %}
-            "></div>
-        <div class="section-title is-darkBackgrounded u-tableCell u-verticalAlignMiddle">
-            <div class="container">
-                <h1 class="title">{{ page.title }}</h1>
-                <div class="postMeta-wrapper">
-                    <p class="meta">
-                    {{ page.date | date: "%B %-d, %Y" }}
-                    {% if page.author %} - {{ page.author }}{% endif %}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="post-content">{{ content }}</section>
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 class="title">{{ page.title }}</h1>
+    <p class="meta">
+    {{ page.date | date: "%B %-d, %Y" }}
+    {% if page.author %} - {{ page.author }}{% endif %}
+    </p>
+  </header>
+  <section class="post-content">{{ content }}</section>
 </article>
 
 <!-- Post navigation -->
@@ -37,19 +17,19 @@ layout: default
 <div id="post-nav">
     {% if page.previous.url %}
     <a id="prev-post" href="{{ site.baseurl }}{{ page.previous.url }}">
-        <span class="page-title">{{ page.previous.title }}</span>
-        <span class="nav-label">
-            <i class="fa fa-chevron-left"></i> {{ site.theme_settings.str_prev }}
-        </span>
+      <span class="page-title">{{ page.previous.title }}</span>
+      <span class="nav-label">
+        <i class="fa fa-chevron-left"></i> {{ site.theme_settings.str_prev }}
+      </span>
     </a>
     {% endif %}
     {% if page.next.url %}
     <a id="next-post" href="{{ site.baseurl }}{{ page.next.url }}">
-        <span class="page-title">{{ page.next.title }}</span>
-        <span class="nav-label">
-            {{ site.theme_settings.str_next }} <i class="fa fa-chevron-right"></i>
-        </span>
-    </a>
+       <span class="page-title">{{ page.next.title }}</span>
+       <span class="nav-label">
+        {{ site.theme_settings.str_next }} <i class="fa fa-chevron-right"></i>
+       </span>
+     </a>
     {% endif %}
 </div>
 {% endif %}
@@ -57,6 +37,6 @@ layout: default
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}
 <div class="comments">
-    {% include disqus.html %}
+  {% include disqus.html %}
 </div>
 {% endif %}
