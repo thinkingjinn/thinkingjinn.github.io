@@ -1,7 +1,16 @@
 ---
 layout: post
-title: Feature images
-feature-img: "img/sample_feature_img.png"
+title:  "Black and white films"
+date:   1929-03-28 01:00:00
+date:   1929-03-28 01:00:00
+excerpt: "In Mickey's early films he was often characterized not as a hero, but as an ineffective young suitor to Minnie Mouse..."
+categories: history
+tags:  mickey
+image:
+  feture: img/sample_feature_img.png
+bgContrast: dark
+bgGradientOpacity: darker
+syntaxHighlighter: no
 ---
 This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.
 
