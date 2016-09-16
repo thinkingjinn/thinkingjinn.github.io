@@ -2,7 +2,7 @@
 layout: post
 title: Feature images
 image:
-  feature: "img/sample_feature_img.png"
+  feature: img/sample_feature_img.png
   topPosition: -50px
 bgContrast: dark
 bgGradientOpacity: darker
