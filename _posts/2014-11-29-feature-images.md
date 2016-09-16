@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Feature images
-feature-img: "img/sample_feature_img.png"
-topPosition: -50px
+image:
+  feature: "img/sample_feature_img.png"
+  topPosition: -50px
 bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
