@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Feature images
-feature-img: "https://c2.staticflickr.com/4/3408/3508395516_1e45eca07d_o.jpg"
+feature-img: "http://sites.psu.edu/leadership/wp-content/uploads/sites/8069/2015/03/musk-4.png"
 ---
 This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.
 
