@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Feature images
+title: Feature images
 image:
   feture: img/sample_feature_img.png
 bgContrast: dark
